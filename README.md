@@ -3,7 +3,8 @@ Set of python scripts that exports HeartRate from Apple Health &amp; draws cool 
 
 Instruction
 
-*Pre-requirements*
+*Pre-requirements*:
+
 Scripts were written on Python3 because MacOS already includes it in distribution. Install `matplotlib` by triggering `pip3 install matplotlib` from console.
 
 1) Export your data from the Apple Health app.

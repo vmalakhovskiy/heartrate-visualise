@@ -54,6 +54,6 @@ For example:
 
 The resulting images look like this:
 ![alt text](https://github.com/vmalakhovskiy/heartrate-visualise/blob/main/misc/Alpha%20Watch.png?raw=true)
-![alt text](https://github.com/vmalakhovskiy/heartrate-visualise/blob/main/misc/Alpha_Watch#2.png?raw=true)
-![alt text](https://github.com/vmalakhovskiy/heartrate-visualise/blob/main/misc/v101%20&%20GTBand#1.png?raw=true)
-![alt text](https://github.com/vmalakhovskiy/heartrate-visualise/blob/main/misc/v101%20&%20GTBand#2.png?raw=true)
+![alt text](https://github.com/vmalakhovskiy/heartrate-visualise/blob/main/misc/Alpha_Watch%232.png?raw=true)
+![alt text](https://github.com/vmalakhovskiy/heartrate-visualise/blob/main/misc/v101%20%26%20GTBand%231.png?raw=true)
+![alt text](https://github.com/vmalakhovskiy/heartrate-visualise/blob/main/misc/v101%20%26%20GTBand%232.png?raw=true)

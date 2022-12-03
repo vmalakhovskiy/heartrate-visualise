@@ -30,7 +30,9 @@ My example looks like this:
 ```tasks = [ 
 	{'raw_start_time': "2022-12-02 08:23:00 +0100", 'raw_end_time': "2022-12-02 09:07:00 +0100", 'title': "Walking"}, 
 	{'raw_start_time': "2022-12-02 01:52:00 +0100", 'raw_end_time': "2022-12-02 07:46:00 +0100", 'title': "Sleeping"},
-]```
+]
+```
+
 
 5) Export data.
   - Open Terminal
@@ -51,8 +53,7 @@ For example:
 `python3 draw_from_csv.py 'OnWear Pro' 'Workout#3.csv' 'Workout#4.csv' 'Sleep#2.csv'`
 
 The resulting images look like this:
-![alt text](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
-![alt text](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
-![alt text](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
-![alt text](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
-![alt text](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
+![alt text](https://github.com/vmalakhovskiy/heartrate-visualise/blob/main/misc/Alpha%20Watch.png?raw=true)
+![alt text](https://github.com/vmalakhovskiy/heartrate-visualise/blob/main/misc/Alpha_Watch#2.png?raw=true)
+![alt text](https://github.com/vmalakhovskiy/heartrate-visualise/blob/main/misc/v101%20&%20GTBand#1.png?raw=true)
+![alt text](https://github.com/vmalakhovskiy/heartrate-visualise/blob/main/misc/v101%20&%20GTBand#2.png?raw=true)

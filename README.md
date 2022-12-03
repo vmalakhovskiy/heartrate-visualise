@@ -27,7 +27,8 @@ The content inside `apple_health_export` may vary, based on your Health features
 In my case - I needed to compare some limited timeslots (for example morning workout & sleep). So if you open `export_health_to_csv.py`, you will find `tasks` array, that contains `raw_start_time` & `raw_end_time` that describes the start and end time of your activity, as well as `title` defining it. You can have as many tasks as you need. Please edit `export_health_to_csv.py` file with your activities.
 
 My example looks like this:
-```tasks = [ 
+```py
+tasks = [ 
 	{'raw_start_time': "2022-12-02 08:23:00 +0100", 'raw_end_time': "2022-12-02 09:07:00 +0100", 'title': "Walking"}, 
 	{'raw_start_time': "2022-12-02 01:52:00 +0100", 'raw_end_time': "2022-12-02 07:46:00 +0100", 'title': "Sleeping"},
 ]
@@ -42,17 +43,17 @@ As the result you'll get a CSV file for each task, containing heart rate data.
 
 ### 6) Visualise data.
   - Run `python3 draw_from_csv.py ImageName CSV_filenames'`, where:
-    * ~ImageName~ - a name from the image to be generated
-    * ~CSV_filenames~ - whitespace separated CSV file names
+    * *ImageName* - a name from the image to be generated
+    * *CSV_filenames* - whitespace separated CSV file names
 My example `python3 draw_from_csv.py 'OnWear Pro' 'Workout#1.csv' 'Workout#2.csv' 'Sleep#1.csv'`
 
 ### 7) Enjoy nice plot visualization.
 From my experience - drawing more than 4 graphs on a single image - doesn't look clear. My suggestion in that case - split those plots into multiple images.
 For example:
 
-`python3 draw_from_csv.py 'OnWear Pro' 'Workout#1.csv' 'Workout#2.csv' 'Sleep#1.csv'`
+`python3 draw_from_csv.py 'OnWear Pro#1' 'Workout#1.csv' 'Workout#2.csv' 'Sleep#1.csv'`
 
-`python3 draw_from_csv.py 'OnWear Pro' 'Workout#3.csv' 'Workout#4.csv' 'Sleep#2.csv'`
+`python3 draw_from_csv.py 'OnWear Pro#2' 'Workout#3.csv' 'Workout#4.csv' 'Sleep#2.csv'`
 
 
 

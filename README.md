@@ -60,7 +60,7 @@ For example:
 #### The resulting images look like this:
 <p float="center">
   <img src=https://github.com/vmalakhovskiy/heartrate-visualise/blob/main/misc/Alpha%20Watch.png width="49%" />
-  <img src=https://github.com/vmalakhovskiy/heartrate-visualise/blob/main/misc/Alpha%20Watch.png width="49%" /> 
+  <img src=https://github.com/vmalakhovskiy/heartrate-visualise/blob/main/misc/Alpha_Watch%232.png width="49%" /> 
 </p>
 <p float="center">
   <img src=https://github.com/vmalakhovskiy/heartrate-visualise/blob/main/misc/v101%20%26%20GTBand%231.png width="49%" />

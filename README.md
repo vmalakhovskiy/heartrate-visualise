@@ -1,30 +1,29 @@
 # heartrate-visualise
 Set of python scripts that exports HeartRate from Apple Health &amp; draws cool plots, so data from various devices could be visually compared.
 
-Instruction
+## Instruction
 
-*Pre-requirements*:
-
+### *Pre-requirements*:
 Scripts were written on Python3 because MacOS already includes it in distribution. Install `matplotlib` by triggering `pip3 install matplotlib` from console.
 
-1) Export your data from the Apple Health app.
+### 1) Export your data from the Apple Health app.
   - On iOS 16, open the Health app
   - Hit your avatar on the top right corner & press `Export All Health Data`
   - Send data to your laptop
   - Unzip it
   - You should see a folder called `apple_health_export` -> open it.
   
-2) Prepare data.
+### 2) Prepare data.
 The content inside `apple_health_export` may vary, based on your Health features usage. You need to find `export.xml` file.
   - Open `export.xml`. It is a large file (mine ~1.3 GB), so it may take some time. It contains all the data from your Health app.
   - At the very beginning of the file, there is a data types map, that my script cannot parse. You need to remove it from the file & save it. You can find `<HealthData locale="~your actual locale~">` XML tag, and delete all lines before it. (In my case it is 156 lines).
   
-3) Copy scripts.
+### 3) Copy scripts.
   - Put `export_health_to_csv.py` & `draw_from_csv.py` scripts from that repo inside `apple_health_export` folder.
 `export_health_to_csv.py` script is intended to export your data into CSV, so you can inspect or share this data without visualization.
 `draw_from_csv.py` is made to draw plots from your CSV files.
   
-4) Express the time intervals you want to be analyzed.
+### 4) Express the time intervals you want to be analyzed.
 In my case - I needed to compare some limited timeslots (for example morning workout & sleep). So if you open `export_health_to_csv.py`, you will find `tasks` array, that contains `raw_start_time` & `raw_end_time` that describes the start and end time of your activity, as well as `title` defining it. You can have as many tasks as you need. Please edit `export_health_to_csv.py` file with your activities.
 
 My example looks like this:
@@ -35,26 +34,34 @@ My example looks like this:
 ```
 
 
-5) Export data.
+### 5) Export data.
   - Open Terminal
   - Navigate to `apple_health_export`
   - Run `python3 export_health_to_csv.py`
 As the result you'll get a CSV file for each task, containing heart rate data.
 
-6) Visualise data.
+### 6) Visualise data.
   - Run `python3 draw_from_csv.py ImageName CSV_filenames'`, where:
-    * ImageName - a name from the image to be generated
-    * CSV_filenames - whitespace separated CSV file names
+    * ~ImageName~ - a name from the image to be generated
+    * ~CSV_filenames~ - whitespace separated CSV file names
 My example `python3 draw_from_csv.py 'OnWear Pro' 'Workout#1.csv' 'Workout#2.csv' 'Sleep#1.csv'`
 
-7) Enjoy nice plot visualization.
+### 7) Enjoy nice plot visualization.
 From my experience - drawing more than 4 graphs on a single image - doesn't look clear. My suggestion in that case - split those plots into multiple images.
 For example:
+
 `python3 draw_from_csv.py 'OnWear Pro' 'Workout#1.csv' 'Workout#2.csv' 'Sleep#1.csv'`
+
 `python3 draw_from_csv.py 'OnWear Pro' 'Workout#3.csv' 'Workout#4.csv' 'Sleep#2.csv'`
 
-The resulting images look like this:
-![alt text](https://github.com/vmalakhovskiy/heartrate-visualise/blob/main/misc/Alpha%20Watch.png?raw=true)
-![alt text](https://github.com/vmalakhovskiy/heartrate-visualise/blob/main/misc/Alpha_Watch%232.png?raw=true)
-![alt text](https://github.com/vmalakhovskiy/heartrate-visualise/blob/main/misc/v101%20%26%20GTBand%231.png?raw=true)
-![alt text](https://github.com/vmalakhovskiy/heartrate-visualise/blob/main/misc/v101%20%26%20GTBand%232.png?raw=true)
+
+
+#### The resulting images look like this:
+<p float="center">
+  <img src=https://github.com/vmalakhovskiy/heartrate-visualise/blob/main/misc/Alpha%20Watch.png width="49%" />
+  <img src=https://github.com/vmalakhovskiy/heartrate-visualise/blob/main/misc/Alpha%20Watch.png width="49%" /> 
+</p>
+<p float="center">
+  <img src=https://github.com/vmalakhovskiy/heartrate-visualise/blob/main/misc/v101%20%26%20GTBand%231.png width="49%" />
+  <img src=https://github.com/vmalakhovskiy/heartrate-visualise/blob/main/misc/v101%20%26%20GTBand%232.png width="49%" /> 
+</p>

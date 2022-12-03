@@ -45,6 +45,7 @@ As the result you'll get a CSV file for each task, containing heart rate data.
   - Run `python3 draw_from_csv.py ImageName CSV_filenames'`, where:
     * *ImageName* - a name from the image to be generated
     * *CSV_filenames* - whitespace separated CSV file names
+
 My example `python3 draw_from_csv.py 'OnWear Pro' 'Workout#1.csv' 'Workout#2.csv' 'Sleep#1.csv'`
 
 ### 7) Enjoy nice plot visualization.
